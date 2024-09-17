@@ -3,73 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesite WWW.view.com | Dengcode</title>
+    <title>Website WWW.index.com | Deng code</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    /* section style for images and description */ 
+.container{
+  position:relative;
+  width: 1150px;
+  display: flex;
+  backdrop-filter: blur(20px);
+  background: transparent;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+
+}
+.img {
+  margin: 15px;
+  padding: 10px;
+  display:flex;
+  flex-wrap: wrap;
+  float: left;
+  text-align: center;
+  align-items: center;
+}
+.decs {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  padding: 10px;
+  text-decoration: none;
+}
+</style>
 <body>
-<header>
-        <h2 class="logo">Deng</h2>
+    <header>
+    <div class="logo">De<b>Shop</b></div>
         <nav class="navigation">
-            <a href="index.php">Home</a>
-            <a href="view.php">About</a>
-            <a href="service.php">Services</a>
-            <a href="#">Contact</a>
+          <a href="index.php">Home</a>
+          <a href="view.php">Product</a>
+          <a href="#">Categories</a>
+          <a href="profile.php">Profile</a>
         </nav>
     </header>
-    <a href="service.php">|&#852;</a>
-    <div class="alb">
-        <img src="uploads/<?=$login['Image_url']?>">
-    </div>
+    <section>
+      <div class="container">
+        <?php
+          require "upload.php";
+          $sql = "SELECT * FROM login";
+          $result = mysqli_query($conn,$sql); 
+        ?>
 
-    <div id="container">
-        <h2>Women Drop</h2>
-        <div class="img">
-        <a href=""><img src="images/11.jpg" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       <div class="img">
-        <a href=""><img src="images/13.jpg" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       <div class="img">
-        <a href=""><img src="images/16.jpg" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       <div class="img">
-        <a href=""><img src="images/18.png" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-</div>
-
-    <div id="container">
-        <h2>Men Drop</h2>
-        
-       <div class="img">
-        <a href=""><img src="images/40.png" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       
-       <div class="img">
-        <a href=""><img src="images/41.png" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       
-       <div class="img">
-        <a href=""><img src="images/43.png" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-
-       
-       <div class="img">
-        <a href=""><img src="images/44.png" alt="" width="300" height="200"></a>
-        <div class="decs">Add a description of the image </div>
-       </div>
-</div>
-
+        <?php 
+          while($row = mysqli_fetch_array($result)) {
+        ?>
+            <div class="img">
+                <img src="<?= $row['Image_url']; ?>" height="200">
+                  <div class="decs">
+                    <?= $row['Username']; ?>
+                  </div>
+                  <div class="decs">
+                    <?= $row['Email']; ?>
+                  </div>
+                  <a class="btn" href="service.php?id=<?= $row['id']; ?>">Buy Now</a>
+            </div>
+        <?php } 
+        ?>
+      </div>
+    </section>
 </body>
 </html>

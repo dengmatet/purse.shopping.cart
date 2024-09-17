@@ -1,30 +1,25 @@
 <?php
-    include "connection.php";
+    require "connection.php";
+ 
+if(isset($_POST['submit']))
+ {
+    $Username = $_POST['Username'];
+    $Email = $_POST['Email'];
+    $password = md5.$_POST['password'];
+    $target_dir = "images/";    
+    $target_file = $target_dir.basename($_FILES['Image_url']["name"]);
 
-if(isset($_POST['submit']) && isset($_FILES['Image_url'])){
+    move_uploaded_file($_FILES['Image_url']["tmp_name"], $target_file);
+    $sql = "INSERT INTO login (Username, Email, password, Image_url)VALUES
+    ('$Username','$Email','$password','$target_file')";
 
-    echo "<pre>";
-    print_r($_FILES['image_url']);
-    echo "</pre>";
-
-    $img_name = $_FILES['Image_url']['name'];
-    $img_size = $_FILES['Image_url']['size'];
-    $tmp_name = $_FILES['Image_url']['tmp_name'];
-    $error = $_FILES['Image_url']['error'];
-
-    if ($error === 0) {
-        if ($img_size > 125000) {
-            $em = "Sorry, your file is too large.";
-            header("Location: index.php?error=$em");
-        }else {
-            $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-        }
-    }else {
-        $em = "unknown error occurred!";
-        header("Location: index.php?error=$em");
+    if(mysqli_query($conn,$sql))
+    {
+        $msg = "Accessed is successfully!";
     }
-}else {
-    header("Location: index.php");
+    else
+    {
+        $msg = "Access is failed!";
+    }        
 }
-
 ?>

@@ -25,16 +25,64 @@ header {
   z-index: 99;
 }
 .logo {
-  font-size: 2em;
+  font-size: 1.3em;
   color: #fff;
   user-select: none;
 }
+b {
+  color: #483d83;
+}
+article {
+  position: fixed;
+  left: 50px;
+  padding: 100px;
+  width: 50%;
+}
+.newsletter {
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 40px 0 40px rgba(0, 0, 0, 0.5);
+}
+.newsletter strong {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.newsletter h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.newsletter p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  letter-spacing: normal;
+}
+.bt {
+  width: 150px;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+aside {
+  position: fixed;
+  left: 700px;
+  padding: 100px;
+  width: 50%;
+}
+.show {
+}
 .navigation a {
   position: relative;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 40px;
 }
 .navigation a::after {
@@ -54,31 +102,30 @@ header {
   transform-origin: left;
   transform: scaleX(1);
 }
-.navigation .btnlogin-popup {
-  width: 130px;
-  height: 50px;
+.btnlogin-popup {
+  width: 100px;
+  height: 40px;
   background: transparent;
-  border: 2px solid #fff;
   outline: none;
-  border-radius: 6px;
   cursor: pointer;
   font-size: 1.1em;
   color: #fff;
   font-weight: 500;
-  margin-left: 40px;
   transition: 0.5s;
+  border-radius: 6px;
+  cursor: pointer;
 }
-.navigation .btnlogin-popup:hover {
+.btnlogin-popup:hover {
   background: #fff;
   color: #162938;
 }
 
 .wrapper {
-  position: relative;
+  position: fixed;
   width: 400px;
   height: 440px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.623);
   border-radius: 20px;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -132,6 +179,7 @@ header {
   cursor: pointer;
   z-index: 1;
 }
+
 .form-box h2 {
   font-size: 2em;
   color: #162938;
@@ -198,6 +246,7 @@ header {
   color: #fff;
   text-decoration: none;
 }
+
 .btn {
   width: 100%;
   height: 45px;
@@ -209,6 +258,10 @@ header {
   font-size: 1em;
   color: #fff;
   font-weight: 500;
+}
+.btn:hover {
+  color: #162938;
+  background-color: #fff;
 }
 .login-register {
   font-size: 0.9em;
@@ -225,36 +278,4 @@ header {
 .login-register p a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-/*here is for the images and description*/
-#container {
-  display: flex;
-  flex-wrap: wrap;
-}
-#container div {
-  background-color: #fff;
-  font-size: 20px;
-  margin: 20px;
-  padding: 20px;
-  width: 400px;
-}
-.img {
-  position: relative;
-  margin: 5px;
-  border: 1px solid #162938;
-  float: left;
-  width: 180px;
-}
-
-.img:hover {
-  border: 1px solid #162938;
-}
-.img img {
-  width: 100%;
-  height: auto;
-}
-.desc {
-  padding: 15px;
-  text-align: center;
 }

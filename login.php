@@ -24,7 +24,7 @@
         <span class="icon-close"><ion-icon name="close">x</ion-icon></span>
         <div class="form-box login">
             <h2>login</h2>
-            <form action="connection.php" <?php echo htmlspecialchars( $_SERVER["PHP_SELF"]);?> method="POST">
+            <form action="" <?php echo htmlspecialchars( $_SERVER["PHP_SELF"]);?> method="POST">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" name="Email" required>
@@ -48,7 +48,7 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="connection.php" <?php echo htmlspecialchars( $_SERVER["PHP_SELF"]);?> method="POST">
+            <form action="" <?php echo htmlspecialchars( $_SERVER["PHP_SELF"]);?> method="POST">
             <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
                     <input type="text" name="Username" required>
@@ -84,3 +84,4 @@
 </body>
 </html>
 
+    
