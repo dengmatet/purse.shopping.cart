@@ -41,7 +41,7 @@ article {
 .newsletter {
   color: #fff;
   backdrop-filter: blur(10px);
-  box-shadow: 40px 0 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 40px 0 40px #fff;
 }
 .newsletter strong {
   font-size: 40px;
@@ -70,13 +70,12 @@ article {
   font-weight: 500;
 }
 aside {
-  position: fixed;
+  width: 50%;
   left: 700px;
   padding: 100px;
-  width: 50%;
+  position: fixed;
 }
-.show {
-}
+
 .navigation a {
   position: relative;
   font-size: 1.2em;
@@ -261,7 +260,7 @@ aside {
 }
 .btn:hover {
   color: #162938;
-  background-color: #fff;
+  background: #fff;
 }
 .login-register {
   font-size: 0.9em;

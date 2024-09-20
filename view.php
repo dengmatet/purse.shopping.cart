@@ -9,6 +9,7 @@
 <style>
     /* section style for images and description */ 
 .container{
+  padding: 15px;
   position:relative;
   width: 1150px;
   display: flex;
@@ -18,8 +19,12 @@
 
 }
 .img {
-  margin: 15px;
-  padding: 10px;
+  padding: 3px; 
+  width: 220px;
+  border: 1px solid #fff;
+  border-top:none;
+  border-left:none;
+  border-bottom:none;
   display:flex;
   flex-wrap: wrap;
   float: left;
@@ -35,17 +40,19 @@ a {
   padding: 10px;
   text-decoration: none;
 }
+
 </style>
 <body>
     <header>
     <div class="logo">De<b>Shop</b></div>
         <nav class="navigation">
           <a href="index.php">Home</a>
-          <a href="view.php">Product</a>
+          <a href="product.php">Product</a>
           <a href="#">Categories</a>
           <a href="profile.php">Profile</a>
         </nav>
     </header>
+
     <section>
       <div class="container">
         <?php
@@ -58,7 +65,7 @@ a {
           while($row = mysqli_fetch_array($result)) {
         ?>
             <div class="img">
-                <img src="<?= $row['Image_url']; ?>" height="200">
+                <img src="<?= $row['Image_url']; ?>" height="200" width="214">
                   <div class="decs">
                     <?= $row['Username']; ?>
                   </div>

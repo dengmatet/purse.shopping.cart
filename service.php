@@ -79,10 +79,11 @@ h3{
 .sidebar{
   width: 350px;
   height: 380px;
+  position: flex;
 }
 img{
     position: relative;
-    width: 330px;
+    width: 350px;
     height: 355px;
 }
     </style>
@@ -90,12 +91,13 @@ img{
 <body>
 
     <header>
-            <h2 class="logo">Deng</h2>
-        <nav class="navigation">
-            <a href="view.php">Home</a>
-            <a href="#">Product</a>
-            <a href="#">Categories</a>
-        </nav>
+    <div class="logo">De<b>Shop</b></div>
+           <nav class="navigation">
+              <a href="index.php">Home</a>
+              <a href="product.php">Product</a>
+              <a href="#">Categories</a>
+              <a href="profile.php">Profile</a>
+           </nav>
     </header>
         <div class="table-head">
             <h2>Fill the details to complete your order</h2>
@@ -124,7 +126,7 @@ img{
                 </tr>
             </table>
             <div class=""><img src="<?= $image; ?>"></div>
-    <aside>
+
         <div class="sidebar">
             <div class="form-box login">
                 <h3>Enter your details </h3>
@@ -144,7 +146,7 @@ img{
             </form>
             </div>     
         </div>
-    </aside>
+
     </div>
 
 </body>

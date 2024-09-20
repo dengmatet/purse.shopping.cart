@@ -14,7 +14,7 @@
         <div class="logo">De<b>Shop</b></div>
            <nav class="navigation">
               <a href="index.php">Home</a>
-              <a href="view.php">Product</a>
+              <a href="product.php">Product</a>
               <a href="#">Categories</a>
               <a href="profile.php">Profile</a>
            </nav>

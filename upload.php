@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
  {
     $Username = $_POST['Username'];
     $Email = $_POST['Email'];
-    $password = md5.$_POST['password'];
+    $password = $_POST['password'];
     $target_dir = "images/";    
     $target_file = $target_dir.basename($_FILES['Image_url']["name"]);
 
