@@ -43,7 +43,7 @@
     <span class="icon-close"><ion-icon name="close">x</ion-icon></span>
         <div class="form-box login">
             <h2>login</h2>
-            <form action="index.php" method="POST" enctype="multipart/form-data">
+            <form action="login1.php" method="POST" enctype="multipart/form-data">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" name="Email" required>
