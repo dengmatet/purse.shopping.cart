@@ -118,7 +118,6 @@ aside {
   background: #fff;
   color: #162938;
 }
-
 .wrapper {
   position: fixed;
   width: 400px;
@@ -277,4 +276,20 @@ aside {
 .login-register p a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+/* -----Responsive Media Queries ----*/
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  .logo,
+  b {
+    text-align: center;
+  }
 }
