@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="box/icons/css/box/icons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css"> 
-    <title>Website with Login & Registration | Code deng</title>
+    <title>DeShop Online Shopping.come</title>
 </head>
 <body>
   
@@ -39,7 +39,7 @@
         </div>
     </aside>
 
-    <div class="wrapper">
+        <div class="wrapper">
     <span class="icon-close"><ion-icon name="close">x</ion-icon></span>
         <div class="form-box login">
             <h2>login</h2>
