@@ -72,7 +72,7 @@ a {
                   <div class="decs">
                     <?= $row['Email']; ?>
                   </div>
-                  <a class="btn" href="service.php?id=<?= $row['id']; ?>">Buy Now</a>
+                  <a class="btn" href="order.php?id=<?= $row['id']; ?>">Buy Now</a>
             </div>
         <?php } 
         ?>

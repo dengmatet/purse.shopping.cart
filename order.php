@@ -130,7 +130,7 @@ img{
         <div class="sidebar">
             <div class="form-box login">
                 <h3>Enter your details </h3>
-            <form action="#" method="POST" accept-charset="utf-8">
+            <form action="pay.php" method="POST" accept-charset="utf-8">
                 <input type="hidden" name="Username" value="<?= $Username; ?>">
                 <input type="hidden" name="Email" value="<?= $Email; ?>">
             <div class="input-box">
