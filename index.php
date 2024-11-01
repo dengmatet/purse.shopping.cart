@@ -1,105 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">            
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeShops Shopping.com</title>
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="box/icons/css/box/icons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  
-    <header>
-        <div class="logo">De<b>Shop</b></div>
-           <nav class="navigation">
-              <a href="index.php">Home</a>
-              <a href="product.php">Product</a>
-              <a href="#">Categories</a>
-              <a href="profile.php">Profile</a>
-           </nav>
-              <button class="btnlogin-popup">LOGIN</button>
-    </header>
+<?php
 
-    <article>
-        <div class="newsletter">
+  $msg = "";
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De shopping.com</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <script rel="stylesheet" src="static/script.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/js/bootstrap.min.js" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="static/img/shopping-bags.png" alt="" width="30" height="30" />
+        <br />
+        De<b>Shop</b>
+      </div>
+      <nav class="navigation">
+        <a href="index.php">Home</a>
+        <a href="admin/category.php">Categories</a>
+        <a href="">Product</a>
+        <!-- Use any element to open the sidenav -->
+      </nav>
+      <button class="col-sm-1 mb-2 btn btn-outline-info" onclick="openNav()">
+        LOGIN
+      </button>
+    </header>
+   <div id="main">
+    <article class="index-category">
+        <div class="letter">
             <strong>New Summer</strong>
-                <h2>Outfits Collection</h2>
+                <h3>Outfits Collection</h3>
                  <p>Complexity explicit alternative benefit where as edge analysis
                     for change,Globally leverage existing an expanded array of leadership
+                     We have included all servers required for running the bundled
+                     web application, so you will find installs large numbers of files. 
+                     If you are installing application on a Windows machine with an antivirus
+                      app enabled, this may slow down the installation significantly, and there is also 
+                      a chance that one of the servers (web server, database server) may be blocked by the 
+                      antivirus software. If you have an antivirus
                 </p>
-                <button class="bt">Shop Now</button>
-
+                <a href="customer/customer_add.php" class="col-sm-4 btn btn-outline-info">Shop Now</a>
+        </div>
+        <div class="index-category-box">
+            <img src="static/img/1.png" alt="" width="300" height="400">
         </div>
     </article>
+   </div>
 
-    <aside>
-        <div class="show">
-            <img src="images/22.png" alt="" width="300" height="400">
-        </div>
-    </aside>
-
-        <div class="wrapper">
-    <span class="icon-close"><ion-icon name="close">x</ion-icon></span>
-        <div class="form-box login">
-            <h2>login</h2>
-            <form action="login1.php" method="POST" enctype="multipart/form-data">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" name="Email" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" name="Password" required>
-                    <label for="">Password</label>
-                </div> 
-                <div class="remember-forgot">
-                    <label> <input type="checkbox" required>Remember me</label>
-                    <a href="">Forgot Password</a>
-                </div>
-                <button class="btn" type="submit">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account<a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="view.php" method="post" enctype="multipart/form-data">
-        <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" name="Username" required>
-                    <label for="">Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" name="Email" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" name="password" required>
-                    <label for="">Password</label>
-                </div> 
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="image"></ion-icon></span>
-                    <input  type="file" name="Image_url" required>
-                </div>
-                <div class="remember-forgot">
-                <label> <input type="checkbox" required>I agree to the terms & conditions</label>
-                </div>
-                <button class="btn" type="submit" name="submit">Register</button>
-                <div class="login-register">
-                    <p>Already have an account<a href="#" class="login-link">Login</a></p>
-                </div>
-            </form>
-        </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="container mt-5 text-white">
+        <h4 class="text-center">login</h4>
+        <form
+          class="form-inline"
+          action="admin/login.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <label for="">Email</label>
+            <input
+              type="text"
+              name="email"
+              class="form-control mt-2"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <label for="">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control mt-3"
+              required="required"
+            />
+          </div>
+          <div class="checkbox">
+            <label class="text-default mt-3">
+              <input type="checkbox" required="required" />Remember me</label
+            >
+            <a class="text-small text-white" href="">Forgot Password</a>
+          </div>
+          <button class="col-sm-12 mt-3 btn btn-outline-info" type="submit" name="submit">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
 
+  </body>
+</html>

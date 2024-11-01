@@ -1,0 +1,290 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 5px 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #483d83;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 1.1em;
+  color: #7a67e4;
+  user-select: none;
+}
+.logo img {
+  margin-left: 20px;
+}
+b {
+  color: #d966e4;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.2em;
+  color: #d966e4;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* The side navigation menu */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  right: 0;
+  background-color: #483d83;
+  overflow-x: hidden;
+  border-top-left-radius: 10px;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: hsl(300, 12%, 97%);
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #d148d6;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right 0.5s;
+  padding: 20px;
+}
+
+.sidenav {
+  right: 0;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+Clear floats after image containers 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}*/
+
+.letter {
+  height: 400px;
+  width: 500px;
+  color: #eee;
+  background-color: #483d83;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  /*  .column {
+    width: 100%;
+  }*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default 
+.mySlides {
+  display: none;
+}*/
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #d148d6;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(81, 38, 182, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #d148d6;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #d148d6;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #483d83;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #d148d6;
+}
+
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*/
+h1 {
+  color: #d966e4;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #d966e4;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #d966e4;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* CATEGORY SECTION*/
+.index-category {
+  width: 80%;
+  padding: 60px 0;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+.index-category-box {
+  width: 200px;
+  height: 200px;
+  background-color: #483d83;
+}
+
+.index-category-box h3 {
+  font-size: 22px;
+  line-height: 28px;
+}
