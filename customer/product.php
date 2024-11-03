@@ -21,7 +21,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Page</title>
+    <title>Pursey Product</title>
     <link rel="stylesheet" href="../static/style.css" />
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../static/js/bootstrap.min.js" />
@@ -29,9 +29,8 @@
   <body>
     <header>
       <div class="logo">
-        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" />
-        <br />
-        De<b>Shop</b>
+        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" /><br />
+        Pursey
       </div>
       <nav class="navigation">
         <a href="../index.php">Home</a>

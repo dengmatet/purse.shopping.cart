@@ -7,7 +7,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>De shopping.com</title>
+    <title>Purse-shopping-management-system</title>
     <link rel="stylesheet" href="static/style.css" />
     <script rel="stylesheet" src="static/script.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
@@ -16,9 +16,8 @@
   <body>
     <header>
       <div class="logo">
-        <img src="static/img/shopping-bags.png" alt="" width="30" height="30" />
-        <br />
-        De<b>Shop</b>
+        <img src="static/img/shopping-bags.png" alt="" width="30" height="30" /><br>
+        Pursey
       </div>
       <nav class="navigation">
         <a href="index.php">Home</a>
@@ -95,7 +94,36 @@
           </button>
         </form>
       </div>
-    </div>
 
+
+      <div class="slideshow-container mt-2">
+     <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <img src="static/img/purse.png" height="150" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="static/img/shop-window.png" height="150" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="static/img/handbag.png" height="150" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
   </body>
 </html>

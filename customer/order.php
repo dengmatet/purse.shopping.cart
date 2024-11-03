@@ -36,7 +36,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete your order</title>
+    <title>Complete your order into purse</title>
     <link rel="stylesheet" href="../static/style.css" />
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../static/js/bootstrap.min.js" />
@@ -44,9 +44,8 @@
 <body>
 <header>
       <div class="logo">
-        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" />
-        <br />
-        De<b>Shop</b>
+        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" /><br />
+        Pursey
       </div>
       <nav class="navigation">
         <a href="../index.php">Home</a>
@@ -65,7 +64,7 @@
                     <th>Product Name</th>
                     <td><?= $p_name; ?></td>
                     <td rowspan="4" class="text-center">
-                        <img src="<?= $p_image; ?>" alt="" width="250">
+                        <img src="<?= $p_image; ?>" alt="" height="290" width="250">
                     </td>
                 </tr>
                 <tr>
@@ -96,32 +95,37 @@
                 </div>
                 <div class="form-group">
                     <input 
-                        class="form-control mt-4"
+                        class="form-control mt-3"
                         type="email" name="email"
                         placeholder="Enter your e-mail"
                         required="required">
                 </div>
                 <div class="form-group">
                     <input 
-                        class="form-control mt-4"
+                        class="form-control mt-3"
                         type="tel" name="phone"
                         placeholder="Enter your phone"
                         required="required">
                 </div>
                 <div class="form-group">
                     <input 
-                        class="form-control mt-4"
+                        class="form-control mt-3"
                         type="text" name=""
                         placeholder="Describe"
                         required="required">
                 </div>
                 <div class="form-group">
                     <button
-                        class="col-sm-12 mt-4 btn btn-outline-danger"
+                        class="col-sm-12 mt-3 btn btn-outline-danger"
                         type="submit"
                         name="submit">
                          Click to pay : <?= number_format($total_price); ?> SSP
                     </button>
+                </div>
+                <div class="form-group">
+                    <a href="product.php" class="col-sm-12 mt-3 btn btn-outline-warning">
+                         Click to Back
+                    </a>
                 </div>
             </form>
         </div>

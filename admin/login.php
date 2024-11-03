@@ -41,7 +41,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideshow page</title>
+    <title>Purse Slideshow</title>
     <link rel="stylesheet" href="../static/style.css" />
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../static/js/bootstrap.min.js" />
@@ -49,9 +49,8 @@ $conn->close();
 <body>
     <header>
       <div class="logo">
-        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" />
-        <br />
-        De<b>Shop</b>
+        <img src="../static/img/shopping-bags.png" alt="" width="30" height="30" /><br />
+        Pursey
       </div>
       <div class="form-group">
             <h3 class="text-center text-info"><?= $msg; ?></h3>
@@ -65,25 +64,25 @@ $conn->close();
 
 <div class="mySlides">
   <div class="numbertext">1 / 4</div>
-  <img src="../static/img/black.jpg" height="520" style="width:100%">
-  <div class="text">BAG</div>
+  <img src="../product-img/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-image.jpg" height="500" style="width:100%">
+  <div class="text">pngtree-exquisite-handbags-promotion-season-simple-yellow-banner</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">2 / 4</div>
-  <img src="../static/img/white.jpg" height="520" style="width:100%">
+  <img src="../static/img/white.jpg" height="500" style="width:100%">
   <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">3 / 4</div>
-  <img src="../static/img/slide.jpg" height="520" style="width:100%">
+  <img src="../static/img/black.jpg" height="500" style="width:100%">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">4 / 4</div>
-  <img src="../static/img/black-bear.jpg" height="520" style="width:100%">
+  <img src="../product-img/download (17).jpeg" height="500" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
 
