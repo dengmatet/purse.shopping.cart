@@ -8,10 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Purse-shopping-management-system</title>
-    <link rel="stylesheet" href="static/style.css" />
-    <script rel="stylesheet" src="static/script.js"></script>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/script.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="static/js/bootstrap.min.js" />
+    <script src="static/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header>
@@ -32,22 +32,15 @@
    <div id="main">
     <article class="index-category">
         <div class="letter">
-            <strong>New Summer</strong>
-                <h3>Outfits Collection</h3>
-                 <p>Complexity explicit alternative benefit where as edge analysis
-                    for change,Globally leverage existing an expanded array of leadership
-                     We have included all servers required for running the bundled
-                     web application, so you will find installs large numbers of files. 
-                     If you are installing application on a Windows machine with an antivirus
-                      app enabled, this may slow down the installation significantly, and there is also 
-                      a chance that one of the servers (web server, database server) may be blocked by the 
-                      antivirus software. If you have an antivirus
+             <h1>Welcome to Pursey</h1>
+                <h3>Bags Collection</h3>
+                 <p>Discover our exclusive Bags & Purses Collection, featuring the latest styles for every occasion. From chic handbags and elegant clutches to spacious totes and trendy crossbody bags, each piece is crafted with quality materials and attention to detail. Elevate your look with our versatile designs—perfect for work, travel, or a night out. Find your new favorite accessory and express your unique style with our curated selection!
                 </p>
                 <a href="customer/customer_add.php" class="col-sm-4 btn btn-outline-info">Shop Now</a>
         </div>
-        <div class="index-category-box">
-            <img src="static/img/1.png" alt="" width="300" height="400">
-        </div>
+         <div class="index-news-box">
+         <img src="pexels-photo-167703.jpeg" alt="" width="100%" height="100%"> 
+         </div>       
     </article>
    </div>
 

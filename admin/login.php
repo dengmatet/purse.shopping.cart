@@ -64,25 +64,25 @@ $conn->close();
 
 <div class="mySlides">
   <div class="numbertext">1 / 4</div>
-  <img src="../product-img/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-image.jpg" height="500" style="width:100%">
+  <img src="../static/product-img/pexels-godisable-jacob-226636-932401.jpg" height="500" style="width:100%">
   <div class="text">pngtree-exquisite-handbags-promotion-season-simple-yellow-banner</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">2 / 4</div>
-  <img src="../static/img/white.jpg" height="500" style="width:100%">
+  <img src="../static/product-img/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-image.jpg" height="500" style="width:100%">
   <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">3 / 4</div>
-  <img src="../static/img/black.jpg" height="500" style="width:100%">
+  <img src="../static/product-img/showcase.jpeg" height="500" style="width:100%">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">4 / 4</div>
-  <img src="../product-img/download (17).jpeg" height="500" style="width:100%">
+  <img src="../static/product-img/pexels-photo-2334906.jpeg" height="500" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
 

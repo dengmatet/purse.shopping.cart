@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purse-Categories</title>
-    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../static/js/bootstrap.min.js" />
+    <link src="../static/js/bootstrap.min.js" />
 </head>
 <body>
 <header>
@@ -25,21 +25,21 @@
 
 <!--- The category section of our website --->
 <section class=" container mt-5 index-category">
-    <a href="" class="index-category-box">
+    <a href="../customer/product.php" class="index-category-box">
         <div class="dark-overlay"></div>
-        <h3>Collection</h3>
+        <h3>Dark Collection</h3>
     </a>
     <a href="" class="index-category-box">
     <div class="dark-overlay"></div>
-        <h3>Collection</h3>
+        <h3>Style Collection</h3>
     </a>
     <a href="" class="index-category-box">
     <div class="dark-overlay"></div>
-        <h3>Collection</h3>
+        <h3>white Collection</h3>
     </a>
     <a href="" class="index-category-box">
     <div class="dark-overlay"></div>
-        <h3>Collection</h3>
+        <h3>Brown Collection</h3>
     </a>
 </section>
 </body>
